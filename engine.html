@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENGINE</title>
+    <link rel="shortcut icon" href="construction IMAGES/logo.png" type="image/x-icon">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="engine.css" />
+  </head>
+  <body>
+    <div class="app-layout">
+      <!-- Sidebar -->
+      <aside class="sidebar d-none d-lg-flex">
+        <div class="sidebar-top">
+          <div class="logo">E</div>
+
+          <i class="bi bi-layout-sidebar"></i>
+        </div>
+
+        <button class="new-chat-btn">
+          <i class="bi bi-pencil-square me-2"></i>
+          New chat
+        </button>
+
+        <a href="#" class="menu-link">
+          <i class="bi bi-search"></i>
+          Search chats
+        </a>
+
+        <a href="#" class="menu-link">
+          <i class="bi bi-folder2-open"></i>
+          Projects
+        </a>
+
+        <a href="#" class="menu-link">
+          <i class="bi bi-cpu"></i>
+          ENGINE AI
+        </a>
+
+        <a href="index.html" class="menu-link">
+          <i class="bi bi-house"></i>
+          Home
+        </a>
+
+        <a href="#" class="menu-link">
+          <i class="bi bi-three-dots"></i>
+          More
+        </a>
+
+        <div class="recent-title">Recents</div>
+
+        <div class="recent-item">Engineering UI Design Prompt</div>
+
+        <div class="recent-item">Structural Analysis Research</div>
+
+        <div class="recent-item">Smart Infrastructure Planning</div>
+
+        <div class="recent-item">HVAC Optimization</div>
+
+        <div class="recent-item">Engineering Material Guide</div>
+      </aside>
+
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="mobileSidebar"
+        aria-labelledby="mobileSidebarLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="mobileSidebarLabel">Menu</h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body p-0">
+          <aside class="sidebar sidebar-mobile">
+            <div class="sidebar-top">
+              <div class="logo">E</div>
+              <i class="bi bi-layout-sidebar"></i>
+            </div>
+
+            <button class="new-chat-btn mb-3 w-100">
+              <i class="bi bi-pencil-square me-2"></i>
+              New chat
+            </button>
+
+            <a href="#" class="menu-link" data-bs-dismiss="offcanvas">
+              <i class="bi bi-search"></i>
+              Search chats
+            </a>
+
+            <a href="#" class="menu-link" data-bs-dismiss="offcanvas">
+              <i class="bi bi-folder2-open"></i>
+              Projects
+            </a>
+
+            <a href="#" class="menu-link" data-bs-dismiss="offcanvas">
+              <i class="bi bi-cpu"></i>
+              ENGINE AI
+            </a>
+
+            <a href="index.html" class="menu-link" data-bs-dismiss="offcanvas">
+              <i class="bi bi-house"></i>
+              Home
+            </a>
+
+            <a href="#" class="menu-link" data-bs-dismiss="offcanvas">
+              <i class="bi bi-three-dots"></i>
+              More
+            </a>
+
+            <div class="recent-title mt-4">Recents</div>
+
+            <div class="recent-item">Engineering UI Design Prompt</div>
+            <div class="recent-item">Structural Analysis Research</div>
+            <div class="recent-item">Smart Infrastructure Planning</div>
+            <div class="recent-item">HVAC Optimization</div>
+            <div class="recent-item">Engineering Material Guide</div>
+          </aside>
+        </div>
+      </div>
+
+      <!-- Main -->
+      <main class="main-content">
+        <!-- Topbar -->
+        <header class="topbar">
+          <div class="d-flex align-items-center">
+            <button
+              class="btn btn-outline-secondary d-lg-none me-3"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#mobileSidebar"
+              aria-controls="mobileSidebar"
+            >
+              <i class="bi bi-list"></i>
+            </button>
+            <h5><a href="index.html">ENGINE</a></h5>
+          </div>
+
+          <button class="upgrade-btn">Log In</button>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero-section">
+          <div class="hero-wrapper">
+            <h1>What engineering problem are you solving today?</h1>
+
+            <!-- Prompt -->
+            <div class="prompt-box">
+              <div class="prompt-top">
+                <i class="bi bi-plus-lg"></i>
+
+                <input type="text" placeholder="Ask ENGINE anything..." />
+
+                <button class="icon-btn">
+                  <i class="bi bi-mic"></i>
+                </button>
+
+                <button class="icon-btn">
+                  <i class="bi bi-arrow-up"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Suggestions -->
+            <div class="suggestions">
+              <button class="suggestion-btn">
+                <i class="bi bi-image"></i>
+                Create engineering diagram
+              </button>
+
+              <button class="suggestion-btn">
+                <i class="bi bi-pencil"></i>
+                Write technical report
+              </button>
+
+              <button class="suggestion-btn">
+                <i class="bi bi-globe"></i>
+                Research engineering topic
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1045 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consalfa - Client Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="construction IMAGES/logo.png" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=Barlow:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="consalfa-dashboard.css" />
+    <link rel="stylesheet" href="login.html">
+    <link rel="stylesheet" href="engine.html">
+  </head>
+  <body>
+    
+
+    <aside class="csf-sidebar" id="csfSidebar">
+      <div class="csf-sidebar__brand">
+        <div class="csf-sidebar__logo">
+          <a href="index.html"><img
+            src="https://kits.alfathemes.xyz/consalfa/wp-content/uploads/2025/02/consalfa-1-1.png"
+            alt="logo"
+          /></a>
+        </div>
+
+        
+          <a href="#sideJAMES"  class="csf-sidebar__toggle ms-auto display-lg-none"
+          id="sidebarToggle"
+          aria-controls="sideJAMES"
+          aria-label="Toggle sidebar"
+          data-bs-toggle="offcanvas">
+
+          <i class="bi bi-list"></i>
+          </a>
+       
+      </div>
+
+      <!-- Nav -->
+      <nav class="csf-sidebar__nav offcanvas-md  offcanvas-start display-block display-lg-none" tabindex="1" aria-labelledby="sidebar-label" id="sideJAMES" style="background-color: rgb(0, 0, 31);">
+        <p class="csf-sidebar__section-label">Main</p>
+
+
+        
+
+        <a href="#overview" class="csf-nav-link csf-nav-link--active">
+          <i class="bi bi-columns-gap"></i>
+          Dashboard
+        </a>
+        <a href="index.html" class="csf-nav-link">
+          <i class="bi bi-house"></i>
+          Home
+        </a>
+        <a href="#timeline" class="csf-nav-link">
+          <i class="bi bi-diagram-2"></i>
+          Project Timeline
+        </a>
+        <a href="#updates" class="csf-nav-link">
+          <i class="bi bi-image"></i>
+          Site Updates
+        </a>
+
+        <p class="csf-sidebar__section-label mt-3">Finance</p>
+
+        <a href="#finance" class="csf-nav-link">
+          <i class="bi bi-wallet"></i>
+          Financial Panel
+        </a>
+        <a href="#documents" class="csf-nav-link">
+          <i class="bi bi-folder"></i>
+          Document Vault  
+        </a>
+
+        <p class="csf-sidebar__section-label mt-3">Quality</p>
+
+        <a href="#materials" class="csf-nav-link">
+          <i class="bi bi-shield-check"></i>
+          Material Verify
+        </a>
+        <a href="#communication" class="csf-nav-link">
+          <i class="bi bi-chat"></i>
+          Messages
+          <span class="csf-badge ms-auto">3</span>
+        </a>
+
+        <a href="engine.html" class="csf-nav-link">
+          <i class="bi bi-robot"></i>
+          Engine Chatbot
+        </a>
+        <a href="#issues" class="csf-nav-link">
+          <i class="bi bi-exclamation-triangle"></i>
+          Issues & Requests
+        </a>
+      </nav>
+
+      <!-- Sidebar Footer -->
+      <div class="csf-sidebar__footer">
+        <div class="csf-sidebar__client">
+          <div class="csf-avatar csf-avatar--sm">
+            <img
+              class="lawson"
+              src="https://dailytimesng.com/wp-content/uploads/2024/10/unnamed.jpg"
+              alt="client-image"
+            />
+          </div>
+          <div class="csf-sidebar__client-info">
+            <p class="csf-sidebar__client-name">Hezekiah Lawson</p>
+            <p class="csf-sidebar__client-role">Project Client</p>
+          </div>
+          <!-- <i
+            class="bi bi-chevron-up ms-auto"
+            style="width: 14px; height: 14px; color: var(--csf-muted)"
+          ></i> -->
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN WRAPPER -->
+
+    <div class="csf-main" id="csfMain">
+      <!-- header -->
+      <header class="csf-header">
+        <div class="csf-header__search">
+          <i class="bi bi-search"></i>
+          <input type="text" placeholder="Search anything..." />
+        </div>
+        <div class="csf-header__actions">
+          <span class="live">
+            <i class="bi bi-camera"></i>
+          </span>
+          <button class="csf-icon-btn" aria-label="Notifications">
+            <i class="bi bi-bell"></i>
+            <span class="csf-notif-dot"></span>
+          </button>
+          <div class="csf-header__profile">
+            <div class="csf-avatar">
+              <img
+                class="lawson"
+                src="https://dailytimesng.com/wp-content/uploads/2024/10/unnamed.jpg"
+                alt="client-image"
+              />
+            </div>
+            <div class="csf-header__profile-text">
+              <p class="csf-header__profile-name">Hezekiah Lawson</p>
+              <p class="csf-header__profile-role">Client</p>
+            </div>
+            <!-- <i
+              class="bi bi-chevron-down"
+              style="width: 14px; height: 14px; color: var(--csf-muted)"
+            ></i> -->
+          </div>
+        </div>
+      </header>
+
+      <!-- PAGE CONTENT  -->
+      <main class="csf-content">
+        <!-- SECTION 1 — OVERVIEW -->
+
+        <section id="overview" class="csf-section">
+          <!-- Welcome -->
+          <div class="csf-welcome">
+            <div>
+              <h1 class="csf-welcome__title">Welcome back, Mr. Lawson</h1>
+              <p class="csf-welcome__sub">
+                Here's what is happening with your project today.
+              </p>
+            </div>
+            <div class="csf-date-badge">
+              <i class="bi bi-calendar"></i>
+              <span>Friday, May 9, 2026</span>
+            </div>
+          </div>
+
+          <!-- Four KPI Cards -->
+          <div class="row g-3 mb-4">
+            <!-- Card 1: Project Name -->
+            <div class="col-12 col-sm-6 col-xl-3">
+              <div class="csf-kpi-card">
+                <div class="csf-kpi-card__icon csf-kpi-card__icon--blue">
+                  <i class="bi bi-building"></i>
+                </div>
+                <div class="csf-kpi-card__body">
+                  <p class="csf-kpi-card__label">Project Name</p>
+                  <p class="csf-kpi-card__value">Lawson's Residence</p>
+                  <p class="csf-kpi-card__sub">
+                    4-Bedroom Duplex · Shelter Afrique, Uyo, AKS.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Current Stage -->
+            <div class="col-12 col-sm-6 col-xl-3">
+              <div class="csf-kpi-card">
+                <div class="csf-kpi-card__icon csf-kpi-card__icon--gold">
+                  <i class="bi bi-layers"></i>
+                </div>
+                <div class="csf-kpi-card__body">
+                  <p class="csf-kpi-card__label">Current Stage</p>
+                  <p class="csf-kpi-card__value">Roofing</p>
+                  <div class="csf-stage-pill csf-stage-pill--warning">
+                    Ongoing
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Progress -->
+            <div class="col-12 col-sm-6 col-xl-3">
+              <div class="csf-kpi-card">
+                <div class="csf-kpi-card__icon csf-kpi-card__icon--green">
+                  <i class="bi bi-bar-chart"></i>
+                </div>
+                <div class="csf-kpi-card__body">
+                  <p class="csf-kpi-card__label">Overall Progress</p>
+                  <p class="csf-kpi-card__value">68%</p>
+                  <div class="csf-progress-bar">
+                    <div
+                      class="csf-progress-bar__fill"
+                      style="width: 68%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Completion Date -->
+            <div class="col-12 col-sm-6 col-xl-3">
+              <div class="csf-kpi-card">
+                <div class="csf-kpi-card__icon csf-kpi-card__icon--red">
+                  <i class="bi bi-clock"></i>
+                </div>
+                <div class="csf-kpi-card__body">
+                  <p class="csf-kpi-card__label">Est. Completion</p>
+                  <p class="csf-kpi-card__value">Dec 15, 2026</p>
+                  <p class="csf-kpi-card__sub">
+                    <span class="text-success">On Track</span> · 142 days left
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 2 — TIMELINE -->
+
+        <section id="timeline" class="csf-section">
+          <div class="csf-section-header">
+            <div>
+              <h2 class="csf-section-title">Project Timeline</h2>
+              <p class="csf-section-sub">
+                Phase-by-phase breakdown of your construction progress
+              </p>
+            </div>
+          </div>
+
+          <div class="csf-card">
+            <div class="csf-timeline">
+              <!-- Phase 1 -->
+              <div class="csf-phase csf-phase--done">
+                <div class="csf-phase__marker">
+                  <i class="bi bi-check"></i>
+                </div>
+                <div class="csf-phase__body">
+                  <div class="csf-phase__header">
+                    <span class="csf-phase__name">Planning & Design</span>
+                    <span class="csf-stage-pill csf-stage-pill--success"
+                      >Completed</span
+                    >
+                    <span class="csf-phase__date">Jan 10 - Feb 5, 2026</span>
+                  </div>
+                  <p class="csf-phase__update">
+                    Architectural drawings approved. Bill of quantities
+                    finalised. Permits obtained from Lagos State.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Phase 2 -->
+              <div class="csf-phase csf-phase--done">
+                <div class="csf-phase__marker">
+                  <i class="bi bi-check"></i>
+                </div>
+                <div class="csf-phase__body">
+                  <div class="csf-phase__header">
+                    <span class="csf-phase__name">Foundation</span>
+                    <span class="csf-stage-pill csf-stage-pill--success"
+                      >Completed</span
+                    >
+                    <span class="csf-phase__date">Feb 10 - Mar 28, 2026</span>
+                  </div>
+                  <p class="csf-phase__update">
+                    Raft foundation poured and cured. Soil test results attached
+                    in Document Vault. All reinforcement inspected.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Phase 3 -->
+              <div class="csf-phase csf-phase--done">
+                <div class="csf-phase__marker">
+                  <i class="bi bi-check"></i>
+                </div>
+                <div class="csf-phase__body">
+                  <div class="csf-phase__header">
+                    <span class="csf-phase__name">Structural Frame</span>
+                    <span class="csf-stage-pill csf-stage-pill--success"
+                      >Completed</span
+                    >
+                    <span class="csf-phase__date">Apr 2 - Jun 14, 2026</span>
+                  </div>
+                  <p class="csf-phase__update">
+                    Columns, beams, and slabs completed across all floors.
+                    Structural integrity confirmed by site engineer.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Phase 4 - Active -->
+              <div class="csf-phase csf-phase--active">
+                <div class="csf-phase__marker csf-phase__marker--pulse">
+                  <i class="bi bi-tools"></i>
+                </div>
+                <div class="csf-phase__body">
+                  <div class="csf-phase__header">
+                    <span class="csf-phase__name">Roofing</span>
+                    <span class="csf-stage-pill csf-stage-pill--warning"
+                      >Ongoing</span
+                    >
+                    <span class="csf-phase__date">Jun 20 - Aug 30, 2026</span>
+                  </div>
+                  <p class="csf-phase__update">
+                    Roof trusses installed. Decrabond sheets currently being
+                    laid. 40% of roofing complete as of last inspection.
+                  </p>
+                  <div class="csf-progress-bar mt-2" style="max-width: 300px">
+                    <div
+                      class="csf-progress-bar__fill csf-progress-bar__fill--gold"
+                      style="width: 40%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Phase 5 -->
+              <div class="csf-phase csf-phase--pending">
+                <div class="csf-phase__marker csf-phase__marker--pending">
+                  <i class="bi bi-circle"></i>
+                </div>
+                <div class="csf-phase__body">
+                  <div class="csf-phase__header">
+                    <span class="csf-phase__name">Finishing & Handover</span>
+                    <span class="csf-stage-pill csf-stage-pill--pending"
+                      >Pending</span
+                    >
+                    <span class="csf-phase__date">Sep 5 - Dec 15, 2026</span>
+                  </div>
+                  <p class="csf-phase__update">
+                    Plastering, tiling, electrical, plumbing, painting, and
+                    final inspection scheduled after roofing.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 3 — SITE UPDATES FEED -->
+
+        <section id="updates" class="csf-section">
+          <div class="csf-section-header">
+            <div>
+              <h2 class="csf-section-title">Site Updates</h2>
+              <p class="csf-section-sub">
+                Live photo and progress reports from your construction site
+              </p>
+            </div>
+            <a href="#" class="csf-link-btn">View All</a>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="csf-update-card">
+                <div class="csf-update-card__img">
+                  <img
+                    src="https://i.pinimg.com/1200x/fa/39/b6/fa39b67d9897053df63d2c996d97040d.jpg"
+                    alt="Roofing progress"
+                  />
+                  <span class="csf-update-card__phase-tag">Roofing</span>
+                </div>
+                <div class="csf-update-card__body">
+                  <div class="csf-update-card__meta">
+                    <i
+                      class="bi bi-clock"
+                      style="width: 13px; height: 13px"
+                    ></i>
+                    <span>Today, 9:42 AM</span>
+                    <span class="ms-auto csf-update-card__reporter"
+                      >Engr. Samuel</span
+                    >
+                  </div>
+                  <p class="csf-update-card__text">
+                    Roof trusses fully welded and bolted. Decrabond sheet
+                    installation at 40%. Workers resuming after morning safety
+                    check.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="csf-update-card">
+                <div class="csf-update-card__img">
+                  <img
+                    src="https://i.pinimg.com/1200x/94/e6/37/94e6374426cb863082a553419b5e14f1.jpg"
+                    alt="Site workers"
+                  />
+                  <span class="csf-update-card__phase-tag">Roofing</span>
+                </div>
+                <div class="csf-update-card__body">
+                  <div class="csf-update-card__meta">
+                    <i
+                      class="bi bi-clock"
+                      style="width: 13px; height: 13px"
+                    ></i>
+                    <span>Yesterday, 4:15 PM</span>
+                    <span class="ms-auto csf-update-card__reporter"
+                      >Engr. Samuel</span
+                    >
+                  </div>
+                  <p class="csf-update-card__text">
+                    Material delivery confirmed, 200 sheets of Decrabond
+                    roofing, receipt uploaded to Document Vault.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="csf-update-card">
+                <div class="csf-update-card__img">
+                  <img
+                    src="https://i.pinimg.com/1200x/b2/aa/11/b2aa114870853d1a79b0f380fcce8a39.jpg"
+                    alt="Structural frame"
+                  />
+                  <span
+                    class="csf-update-card__phase-tag csf-update-card__phase-tag--done"
+                    >Structure</span
+                  >
+                </div>
+                <div class="csf-update-card__body">
+                  <div class="csf-update-card__meta">
+                    <i
+                      class="bi bi-clock"
+                      style="width: 13px; height: 13px"
+                    ></i>
+                    <span>Jun 14, 2026</span>
+                    <span class="ms-auto csf-update-card__reporter"
+                      >Engr. Samuel</span
+                    >
+                  </div>
+                  <p class="csf-update-card__text">
+                    1st floor slab poured and cured successfully. Structural
+                    phase signed off. Moving to roofing stage.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 4 — FINANCIAL PANEL -->
+        <section id="finance" class="csf-section">
+          <div class="csf-section-header">
+            <div>
+              <h2 class="csf-section-title">Financial Transparency</h2>
+              <p class="csf-section-sub">
+                Full breakdown of your project budget and expenditure
+              </p>
+            </div>
+            <span class="csf-trust-badge"
+              ><i class="bi bi-shield-check"></i> Verified</span
+            >
+          </div>
+
+          <!-- Budget Summary -->
+          <div class="row g-3 mb-3">
+            <div class="col-12 col-md-4">
+              <div class="csf-finance-card csf-finance-card--total">
+                <p class="csf-finance-card__label">Total Budget</p>
+                <p class="csf-finance-card__amount">₦85,000,000</p>
+                <p class="csf-finance-card__sub">Agreed contract value</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="csf-finance-card csf-finance-card--spent">
+                <p class="csf-finance-card__label">Amount Spent</p>
+                <p class="csf-finance-card__amount">₦57,800,000</p>
+                <div class="csf-progress-bar mt-2">
+                  <div
+                    class="csf-progress-bar__fill csf-progress-bar__fill--gold"
+                    style="width: 68%"
+                  ></div>
+                </div>
+                <p class="csf-finance-card__sub mt-1">68% of total budget</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="csf-finance-card csf-finance-card--balance">
+                <p class="csf-finance-card__label">Remaining Balance</p>
+                <p class="csf-finance-card__amount">₦27,200,000</p>
+                <p class="csf-finance-card__sub">
+                  32% remaining · Finishing stage
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Expenditure Breakdown -->
+          <div class="csf-card">
+            <h3 class="csf-card__title mb-3">Expenditure Breakdown</h3>
+            <div class="csf-finance-table">
+              <div class="csf-finance-row csf-finance-row--head">
+                <span>Category</span>
+                <span>Budgeted</span>
+                <span>Spent</span>
+                <span>Balance</span>
+                <span>Status</span>
+              </div>
+
+              <div class="csf-finance-row">
+                <span class="csf-finance-row__cat"
+                  ><i class="bi bi-box"></i> Materials</span
+                >
+                <span>₦42,000,000</span>
+                <span>₦30,500,000</span>
+                <span class="text-success">₦11,500,000</span>
+                <span
+                  ><div class="csf-stage-pill csf-stage-pill--success">
+                    On Budget
+                  </div></span
+                >
+              </div>
+
+              <div class="csf-finance-row">
+                <span class="csf-finance-row__cat"
+                  ><i class="bi bi-people"></i> Labour</span
+                >
+                <span>₦25,000,000</span>
+                <span>₦18,200,000</span>
+                <span class="text-success">₦6,800,000</span>
+                <span
+                  ><div class="csf-stage-pill csf-stage-pill--success">
+                    On Budget
+                  </div></span
+                >
+              </div>
+
+              <div class="csf-finance-row">
+                <span class="csf-finance-row__cat"
+                  ><i class="bi bi-truck"></i> Logistics</span
+                >
+                <span>₦8,000,000</span>
+                <span>₦6,100,000</span>
+                <span class="text-warning">₦1,900,000</span>
+                <span
+                  ><div class="csf-stage-pill csf-stage-pill--warning">
+                    Watch
+                  </div></span
+                >
+              </div>
+
+              <div class="csf-finance-row">
+                <span class="csf-finance-row__cat"
+                  ><i class="bi bi-file-text"></i> Permits & Admin</span
+                >
+                <span>₦3,000,000</span>
+                <span>₦3,000,000</span>
+                <span class="text-danger">₦0</span>
+                <span
+                  ><div class="csf-stage-pill csf-stage-pill--error">
+                    Used
+                  </div></span
+                >
+              </div>
+
+              <div class="csf-finance-row">
+                <span class="csf-finance-row__cat"
+                  ><i class="bi bi-shield"></i> Contingency</span
+                >
+                <span>₦7,000,000</span>
+                <span>₦0</span>
+                <span class="text-success">₦7,000,000</span>
+                <span
+                  ><div class="csf-stage-pill csf-stage-pill--pending">
+                    Reserved
+                  </div></span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 5 — DOCUMENT VAULT -->
+
+        <section id="documents" class="csf-section">
+          <div class="csf-section-header">
+            <div>
+              <h2 class="csf-section-title">Document Vault</h2>
+              <p class="csf-section-sub">
+                All your project documents, safely stored and downloadable
+              </p>
+            </div>
+          </div>
+
+          <div class="csf-card">
+            <div class="row g-3">
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="csf-doc-card">
+                  <div class="csf-doc-card__icon csf-doc-card__icon--blue">
+                    <i class="bi bi-file-text"></i>
+                  </div>
+                  <div class="csf-doc-card__info">
+                    <p class="csf-doc-card__name">Construction Contract</p>
+                    <p class="csf-doc-card__meta">
+                      PDF · 2.4 MB · Jan 10, 2026
+                    </p>
+                  </div>
+                  <a href="#" class="csf-doc-card__btn" aria-label="Download">
+                    <i class="bi bi-download"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="csf-doc-card">
+                  <div class="csf-doc-card__icon csf-doc-card__icon--gold">
+                    <i class="bi bi-map"></i>
+                  </div>
+                  <div class="csf-doc-card__info">
+                    <p class="csf-doc-card__name">Architectural Plans</p>
+                    <p class="csf-doc-card__meta">
+                      PDF · 8.1 MB · Jan 15, 2026
+                    </p>
+                  </div>
+                  <a href="#" class="csf-doc-card__btn" aria-label="Download">
+                    <i class="bi bi-download"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="csf-doc-card">
+                  <div class="csf-doc-card__icon csf-doc-card__icon--green">
+                    <i class="bi bi-check-circle"></i>
+                  </div>
+                  <div class="csf-doc-card__info">
+                    <p class="csf-doc-card__name">Building Permit</p>
+                    <p class="csf-doc-card__meta">PDF · 1.2 MB · Feb 1, 2026</p>
+                  </div>
+                  <a href="#" class="csf-doc-card__btn" aria-label="Download">
+                    <i class="bi bi-download"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="csf-doc-card">
+                  <div class="csf-doc-card__icon csf-doc-card__icon--red">
+                    <i class="bi bi-receipt"></i>
+                  </div>
+                  <div class="csf-doc-card__info">
+                    <p class="csf-doc-card__name">Payment Receipts</p>
+                    <p class="csf-doc-card__meta">
+                      ZIP · 4.7 MB · Latest: Jul 2
+                    </p>
+                  </div>
+                  <a href="#" class="csf-doc-card__btn" aria-label="Download">
+                    <i class="bi bi-download"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="csf-doc-card">
+                  <div class="csf-doc-card__icon csf-doc-card__icon--blue">
+                    <i class="bi bi-list-check"></i>
+                  </div>
+                  <div class="csf-doc-card__info">
+                    <p class="csf-doc-card__name">Bill of Quantities</p>
+                    <p class="csf-doc-card__meta">
+                      XLSX · 560 KB · Jan 12, 2026
+                    </p>
+                  </div>
+                  <a href="#" class="csf-doc-card__btn" aria-label="Download">
+                    <i class="bi bi-download"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="csf-doc-card">
+                  <div class="csf-doc-card__icon csf-doc-card__icon--gold">
+                    <i class="bi bi-file-check"></i>
+                  </div>
+                  <div class="csf-doc-card__info">
+                    <p class="csf-doc-card__name">Structural Report</p>
+                    <p class="csf-doc-card__meta">
+                      PDF · 3.3 MB · Jun 14, 2026
+                    </p>
+                  </div>
+                  <a href="#" class="csf-doc-card__btn" aria-label="Download">
+                    <i class="bi bi-download"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 6 — MATERIAL VERIFICATION -->
+
+        <section id="materials" class="csf-section">
+          <div class="csf-section-header">
+            <div>
+              <h2 class="csf-section-title">Material Transparency & Quality</h2>
+              <p class="csf-section-sub">
+                Every material used on your site, all verified and logged
+              </p>
+            </div>
+            <span class="csf-trust-badge csf-trust-badge--green"
+              ><i class="bi bi-check-circle"></i> 14 Items Verified</span
+            >
+          </div>
+
+          <div class="csf-card">
+            <div class="csf-material-table">
+              <div class="csf-material-row csf-material-row--head">
+                <span>Material</span>
+                <span>Supplier</span>
+                <span>Quantity</span>
+                <span>Grade / Spec</span>
+                <span>Receipt</span>
+                <span>Status</span>
+              </div>
+
+              <div class="csf-material-row">
+                <span class="csf-material-row__name"
+                  ><i class="bi bi-layers"></i> Dangote Cement</span
+                >
+                <span>BuildMart Lagos</span>
+                <span>800 bags</span>
+                <span>Grade 42.5R</span>
+                <a href="#" class="csf-link-sm"
+                  ><i class="bi bi-file-text"></i> View</a
+                >
+                <span
+                  ><div class="csf-stage-pill csf-stage-pill--success">
+                    Verified
+                  </div></span
+                >
+              </div>
+
+              <div class="csf-material-row">
+                <span class="csf-material-row__name"
+                  ><i class="bi bi-dash-square"></i> Iron Rods</span
+                >
+                <span>Stallion Steel</span>
+                <span>12 tonnes</span>
+                <span>Y16 / Y25 BS4449</span>
+                <a href="#" class="csf-link-sm"
+                  ><i class="bi bi-file-text"></i> View</a
+                >
+                <span
+                  ><div class="csf-stage-pill csf-stage-pill--success">
+                    Verified
+                  </div></span
+                >
+              </div>
+
+              <div class="csf-material-row">
+                <span class="csf-material-row__name"
+                  ><i class="bi bi-house"></i> Decrabond Roofing</span
+                >
+                <span>Nigerite Ltd</span>
+                <span>200 sheets</span>
+                <span>Long Span 0.55mm</span>
+                <a href="#" class="csf-link-sm"
+                  ><i class="bi bi-file-text"></i> View</a
+                >
+                <span
+                  ><div class="csf-stage-pill csf-stage-pill--success">
+                    Verified
+                  </div></span
+                >
+              </div>
+
+              <div class="csf-material-row">
+                <span class="csf-material-row__name"
+                  ><i class="bi bi-droplet"></i> Sharp Sand</span
+                >
+                <span>Local Quarry</span>
+                <span>45 trips</span>
+                <span>Washed / Graded</span>
+                <a href="#" class="csf-link-sm"
+                  ><i class="bi bi-file-text"></i> View</a
+                >
+                <span
+                  ><div class="csf-stage-pill csf-stage-pill--warning">
+                    Pending Lab
+                  </div></span
+                >
+              </div>
+
+              <div class="csf-material-row">
+                <span class="csf-material-row__name"
+                  ><i class="bi bi-lightning"></i> Electrical Cables</span
+                >
+                <span>NOCACO Wire</span>
+                <span>2,400 m</span>
+                <span>1.5mm / 2.5mm NEC</span>
+                <a href="#" class="csf-link-sm"
+                  ><i class="bi bi-file-text"></i> View</a
+                >
+                <span
+                  ><div class="csf-stage-pill csf-stage-pill--pending">
+                    Scheduled
+                  </div></span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 7 — MESSAGES -->
+
+        <section id="communication" class="csf-section">
+          <div class="csf-section-header">
+            <div>
+              <h2 class="csf-section-title">Messages</h2>
+              <p class="csf-section-sub">
+                Direct line between you and your project manager
+              </p>
+            </div>
+            <span class="csf-trust-badge"
+              ><i class="bi bi-lock"></i> Monitored by Admin</span
+            >
+          </div>
+
+          <div class="csf-card csf-chat">
+            <!-- Chat Messages -->
+            <div class="csf-chat__messages" id="chatMessages">
+              <!-- Theirs -->
+              <div class="csf-chat__msg csf-chat__msg--theirs">
+                <div class="csf-avatar csf-avatar--sm csf-avatar--navy">SM</div>
+                <div class="csf-chat__bubble csf-chat__bubble--theirs">
+                  <p class="csf-chat__sender">Engr. Samuel</p>
+                  <p>
+                    Good morning Mr. Lawson Roofing is progressing well, we're
+                    at 40% now. Should be done by next Friday if weather holds.
+                  </p>
+                  <p class="csf-chat__time">Today · 8:05 AM</p>
+                </div>
+              </div>
+
+              <!-- Mine -->
+              <div class="csf-chat__msg csf-chat__msg--mine">
+                <div class="csf-chat__bubble csf-chat__bubble--mine">
+                  <p>
+                    Good morning Engr. Samuel. Thanks for the update. Can you
+                    send photos of the ridge capping when done?
+                  </p>
+                  <p class="csf-chat__time">Today · 8:22 AM</p>
+                </div>
+                <div class="csf-avatar csf-avatar--sm csf-avatar--gold">HL</div>
+              </div>
+
+              <!-- Theirs -->
+              <div class="csf-chat__msg csf-chat__msg--theirs">
+                <div class="csf-avatar csf-avatar--sm csf-avatar--navy">EM</div>
+                <div class="csf-chat__bubble csf-chat__bubble--theirs">
+                  <p class="csf-chat__sender">Engr. Samuel</p>
+                  <p>
+                    Absolutely. Will upload to Site Updates once the capping is
+                    complete. Also, the electrical team is on standby for
+                    September. No delays expected.
+                  </p>
+                  <p class="csf-chat__time">Today · 9:01 AM</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chat Input -->
+            <div class="csf-chat__input-row">
+              <input
+                type="text"
+                class="csf-chat__input"
+                placeholder="Type your message..."
+              />
+              <button class="csf-chat__send">
+                <i class="bi bi-send"></i>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 8 — ISSUES & REQUESTS -->
+
+        <section id="issues" class="csf-section">
+          <div class="csf-section-header">
+            <div>
+              <h2 class="csf-section-title">Issues & Change Requests</h2>
+              <p class="csf-section-sub">
+                Report a problem or request a modification to your project
+              </p>
+            </div>
+            <button class="csf-btn csf-btn--navy">
+              <i class="bi bi-plus"></i> New Request
+            </button>
+          </div>
+
+          <div class="row g-3">
+            <!-- Existing Issues -->
+            <div class="col-12 col-lg-7">
+              <div class="csf-card">
+                <h3 class="csf-card__title mb-3">Open Issues</h3>
+
+                <div class="csf-issue">
+                  <div class="csf-issue__dot csf-issue__dot--warning"></div>
+                  <div class="csf-issue__body">
+                    <p class="csf-issue__title">
+                      Window size change - Master Bedroom
+                    </p>
+                    <p class="csf-issue__meta">
+                      Submitted Jul 1 · Change Request ·
+                      <span class="text-warning">Under Review</span>
+                    </p>
+                    <p class="csf-issue__desc">
+                      Client requested window dimensions changed from 1.2m x
+                      1.5m to 1.5m x 1.8m for master bedroom only.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="csf-issue">
+                  <div class="csf-issue__dot csf-issue__dot--success"></div>
+                  <div class="csf-issue__body">
+                    <p class="csf-issue__title">
+                      Water ponding near south wall
+                    </p>
+                    <p class="csf-issue__meta">
+                      Submitted Jun 22 · Site Issue ·
+                      <span class="text-success">Resolved</span>
+                    </p>
+                    <p class="csf-issue__desc">
+                      Drainage channel added and regrading completed. Issue
+                      closed Jun 28.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="csf-issue">
+                  <div class="csf-issue__dot csf-issue__dot--red"></div>
+                  <div class="csf-issue__body">
+                    <p class="csf-issue__title">
+                      Generator house relocation request
+                    </p>
+                    <p class="csf-issue__meta">
+                      Submitted Jul 3 · Change Request ·
+                      <span class="text-danger">Requires Cost Review</span>
+                    </p>
+                    <p class="csf-issue__desc">
+                      Client wants generator house moved 3m further east.
+                      Structural assessment in progress, cost implication
+                      pending.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Submit Form -->
+            <div class="col-12 col-lg-5">
+              <div class="csf-card">
+                <h3 class="csf-card__title mb-3">Submit a Report</h3>
+
+                <div class="csf-form-group">
+                  <label class="csf-label">Type</label>
+                  <select class="csf-select">
+                    <option>Site Issue</option>
+                    <option>Change Request</option>
+                    <option>Quality Concern</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+
+                <div class="csf-form-group">
+                  <label class="csf-label">Subject</label>
+                  <input
+                    type="text"
+                    class="csf-input"
+                    placeholder="Brief title of your report"
+                  />
+                </div>
+
+                <div class="csf-form-group">
+                  <label class="csf-label">Description</label>
+                  <textarea
+                    class="csf-input csf-textarea"
+                    rows="4"
+                    placeholder="Describe the issue or change in detail..."
+                  ></textarea>
+                </div>
+
+                <div class="csf-form-group">
+                  <label class="csf-label">Priority</label>
+                  <select class="csf-select">
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High - Urgent</option>
+                  </select>
+                </div>
+
+                <button class="csf-btn csf-btn--gold w-100">
+                  <i class="bi bi-send"></i> Submit Report
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
