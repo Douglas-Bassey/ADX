@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cd \"bot engine\" && npm start"
+    "start": "cd \"bot engine\" && npm install && npm start",
+    "install": "cd \"bot engine\" && npm install"
   },
   "repository": {
     "type": "git",
