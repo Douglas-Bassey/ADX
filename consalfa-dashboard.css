@@ -1726,3 +1726,14 @@ form{
     width: 100%;
   }
 }
+
+.ConLog{
+  background-color: red;
+  border-radius: 20px;
+  border: none;
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+}
